@@ -1,95 +1,347 @@
-<!DOCTYPE html>
-<html>
+﻿<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-<title>七夕节快乐</title>
+	<meta charset="UTF-8">
+	<title>Wonder简历</title>
+    
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="apple-mobile-app-capable" content="yes">
+    <meta name="apple-mobile-app-status-bar-style" content="black">
+   
+    <meta name="description" content="皮皮虾">
+    <meta name="keywords" content="宅属性, 前端, 编程, 全栈, 设计, Java, C++, PHP, C#">
+	<meta name="keywords" content="Java开发，软件开发工程师，JavaWeb，JavaEE，JavaSE">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="cononico">
+    <meta name="application-name" content="Cononico" >
 
-<link rel='stylesheet' href='css/55c16d94000109f300000000.css' />
-<link rel='stylesheet' href='css/55c16dab0001286100000000.css' />
-<link rel='stylesheet' href='css/55c16dc00001fa1a00000000.css' />
-<link rel='stylesheet' href='css/55c16dda0001113100000000.css' />
-
-<script type="text/javascript" src="js/55ac9a860001a6c500000000.js"></script>
-<script type="text/javascript" src="js/55ac9ea30001ace700000000.js"></script>
-<script type="text/javascript" src="js/55c16c910001e21b00000000.js"></script>
-
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/process.css">
+    <link rel="shortcut icon"  type="image/x-icon" href="favicon.ico" />
+	<EMBED src="music/back1.mp3" autostart="true" loop="true" width="80" height="20"> 
+    
+    <script type="text/javascript">
+        //设定rem值
+        document.getElementsByTagName("html")[0].style.fontSize = document.documentElement.clientWidth/20 + 'px';
+    </script>
 </head>
-
 <body>
-<div id='content'>
-    <ul class='content-wrap'>
-        <!-- 第一副画面 -->
-        <li>
-            <!-- 背景图 -->
-            <div class="a_background">
-                <div class="a_background_top"></div>
-                <div class="a_background_middle"></div>
-                <div class="a_background_botton"></div>
-            </div>
-            <!-- 云 -->
-            <div class="cloudArea">
-                <div class="cloud cloud1"></div>
-                <div class="cloud cloud2"></div>
-            </div>
-            <!-- 太阳 -->
-            <div id="sun"></div>
-        </li>
-        <!-- 第二副画面 -->
-        <li>
-            <!-- 背景图 -->
-            <div class="b_background"></div>
-            <div class="b_background_preload"></div>
-            <!-- 商店 -->
-            <div class="shop">
-                <div class="door">
-                    <div class="door-left"></div>
-                    <div class="door-right"></div>
-                </div>
-                <!-- 灯 -->
-                <div class="lamp"></div>
-            </div>
-            <!-- 鸟 -->
-            <div class="bird"></div>
-        </li>
-        <!-- 第三副画面 -->
-        <li>
-            <!-- 背景图 -->
-            <div class="c_background">
-                <div class="c_background_top"></div>
-                <div class="c_background_middle"></div>
-                <div class="c_background_botton"></div>
-            </div>
-            <!-- 小女孩 -->
-            <div class="girl"></div>
-            <div class="bridge-bottom">
-                <div class="water">
-                    <div id="water1" class="water_1"></div>
-                    <div id="water2" class="water_2"></div>
-                    <div id="water3" class="water_3"></div>
-                    <div id="water4" class="water_4"></div>
-                </div>
-            </div>
-            <!-- 星星 -->
-            <ul class="stars">
-                <li class="stars1"></li>
-                <li class="stars2"></li>
-                <li class="stars3"></li>
-                <li class="stars4"></li>
-                <li class="stars5"></li>
-                <li class="stars6"></li>
-            </ul>
-            <!-- 慕课网logo图 -->
-            <div class="logo">祝天下有情人终成眷属</div>
-        </li>
+	<header class="head">
+        <div class="head_logo_div">
+            <img class="logo_img" src="images/upload/head.jpg"></a>
+        </div>
+        <div class="head_nav_div">
+             <nav class="head_nav">
+                <ul id="nav_ul">
+                    <li class="nav_li_on nav_ul_li">Home</li>
+                    <li class="nav_ul_li">Skill</li>
+                    <li class="nav_ul_li">Experience</li>
+                    <li class="nav_ul_li">Hobby</li>
+                    <li class="nav_ul_li">Contact</li>
+					<!--<li class="nav_ul_li"  ><a href="doc/resume1.docx">简历（Word）</a></li>-->
+					<li class="nav_ul_li" ><a href="" >简历（Pdf）</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="clear"></div>
+    </header>
+    
+    <ul class="float_btn" id="float_btn">
+        <li class="btn_on"></li>
+        <li></li>
+        <li></li>
+        <li></li>
     </ul>
-    <!-- 雪花 -->
-    <div id="snowflake"></div>
-    <!-- 小男孩 -->
-    <div id="boy" class="charector"></div>
-</div>
+    
+    <div class="wrapBox" id="wrapBox">
+        <div class="box">
+            <img class="box_bg" src="images/upload/pic_1.jpg">
+            <div class="box01_content">
+                <div class="head_div">
+                    <div class="cycle_item">
+                        <a href="myInfo.html" class="github_a" id="github_a" target="_blank">
+                            <span class="github_icon"></span>
+                            <span class="github_text"><p class="item_name">爱编程</p></span>
+                        </a>
+                        <a href="myInfo.html" class="weibo_a" id="weibo_a" target="_blank">
+                            <span class="weibo_icon"></span>
+                            <span class="weibo_text"><p class="item_name">肯吃苦</p> </span>
+                        </a>
+                        <a href="myInfo.html" class="blog_a" id="blog_a" target="_blank">
+                            <span class="qq_icon1"></span>
+                            <span class="blog_text"><p class="item_name">长得帅</p></span>
+                        </a>
 
-<div style="text-align:center;">
-</div>
-
+                        <div class="green_cycle">
+                            <img class="green_cycle_img" src="images/icon/green_cycle.svg">
+                            <div class="yellow_cycle">
+                                <img class="yellow_cycle_img" src="images/icon/yellow_cycle.svg">
+                                <div class="blue_cycle">
+                                    <img class="blue_cycle_img" src="images/icon/blue_cycle.svg">
+                                    <div class="head_img_div">
+                                        <img class="head_img" src="images/upload/head.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h1 class="title">追风</h1>
+                <h2 class="title_h2">千里之行，始于足下</h2>
+                <div id="box01_text">
+                <!--<p class="box01_p">不久前还只是尘世中迷途小书童.</p>
+                <p class="box01_p">现在还只是一只热爱编程的追风少年.</p>
+                <p class="box01_p">不久以后将是一个互联网操盘手.</p>-->
+                </div>
+            </div>
+            <div class="arrow_div">
+                <img class="arrow_img" src="images/icon/arrowhead.png">
+            </div>
+        </div>
+        
+        <div class="box">
+            <img class="box_bg" src="images/upload/pic_2.jpg">
+            
+            <div class="box02_content box_content">
+                <div id='bar_container' class="bar_container">
+                    <div class='bar mint' data-percent='80' data-skill='Java SE'></div>
+                    <div class='bar red' data-percent='60' data-skill='多线程'></div>
+                    <div class='bar lila' data-percent='50' data-skill='Spring'></div>
+                    <div class='bar orange' data-percent='50' data-skill='Flume'></div>
+                    <div class="bar green" data-percent='60' data-skill='MySql'></div>
+                    <div class='bar gray' data-percent='50' data-skill='HTML5 || CSS'></div>
+                    <div class="bar blue" data-percent='50' data-skill='PS'></div>
+                </div>
+                <div id="box02_text">
+                    <h1>About Skill</h1>
+                    <div class="overline"></div>
+                    <p>2014,第一次接触是C/C++,在拥挤的实验室</p>
+                    <p>2015,学习了C#，瞬间觉得编程还能如此的容易</p>
+                    <p>2015,下半年一直在学HTML5,CSS3,JavaScript,BootStrap,Mysql</p>
+                    <p>2016,学习PHP,并使用PHP开发了后来的毕业设计</p>
+                    <p>2017,开始学习Java，觉得java是世界上最好的语言</p>
+                    <p>剩下时间我在学习各种JavaSE技术</p>
+                    <p>随后的岁月里,一直在学习JavaEE的各种技术</p>
+                    <p>Servlet,Jsp,JDBC ...</p>
+                    <p>某一天发现之前学的没啥鸟用,所有的功能框架早就做好了</p>
+                    <p>随后抓紧机会学习HIbernate,Spring,SpringMVC,SpringBoot</p>
+                    <p>毕业了, 由于工作内容, 学习很多深入java技术</p>
+                    <p>Flume, Netty, Radis, java多线程, Jvm等</p>
+                    <p style="color: blue; text-shadow: 5px 5px 5px #969292;">技术在创新, 唯有不断学习, 砥砺前行...</p>
+                </div>
+                <div class="clear"></div>
+            </div>
+            
+            <div class="arrow_div">
+                <img class="arrow_img" src="images/icon/arrowhead.png">
+            </div>
+            
+        </div>
+        
+        <div class="box">
+            <img class="box_bg" src="images/upload/pic_3.jpg">
+            
+            <div class="box_content box03_content">
+                <ul id="timeUl" class="timeUl">
+                    <li>
+                        <div>
+                            <h1>2013-2017</h1>
+                            <p>湖北长江大学</p>
+                            <p>专业：计算机科学与技术</p>
+                            <p>从来没有品尝到挂科是什么滋味~</p>
+                            <p>最喜欢的科目是Java<p>
+                            <p>现在正在愁于寻求一个组织</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <h1>2016.7-2016.11</h1>
+                            <p>富士康科技园</p>
+                            <p>BIOS开发</p>
+                            <p>最最最最底层的开发，只有漫天的Protocol与我同行</p>
+                           <p>看不到前面的路是怎样的</p>
+                        </div>
+                    </li>
+                    
+                    <li>
+                       <div>
+                            <h1>2017.8-至今</h1>
+                            <p>苏州优圣美智能系统有限公司</p>
+                            <p>Java后台开发工程师</p>
+                            <p>终于如愿以偿的当上了程序员</p>
+                            <p>开始了我的Java程序生涯</p>
+                        </div>
+                    </li>
+                    <li>
+                       <div>
+                            <h1>Future</h1>
+                            
+                            <p>...</p>
+                        </div>
+                    </li>
+                </ul>
+                 <div class="left_div" id="left_div">
+                     <img class="left_arrow" src="images/icon/arrowleft.png">
+                 </div>
+                 <div class="right_div" id="right_div">
+                      <img class="right_arrow" src="images/icon/arrowright.png">
+                 </div>
+            </div>
+            
+             <div class="arrow_div">
+                <img class="arrow_img" src="images/icon/arrowhead.png">
+            </div>
+        </div>
+        
+        
+        <div class="box">
+            
+            <img class="box_bg" src="images/upload/pic_4.jpg">
+            <div class="box_content box04_content">
+                <h1 class="box04_title">Something Of Hobby</h1>
+                <ul class="hobby_content">
+                    <li class="hobby_01" style="height:490px">
+                        <div class="hobby_img_div">
+                            <div class="spinner spinner_01"></div>
+                            <div class="hobby_img">
+                                <img src="images/upload/hb1.jpg">
+                            </div>
+                            <div class="hobby_img_info">
+                                <h1>体育</h1>
+                                <h2>足球&游泳</h2>
+                            </div>
+                        </div>
+                        <div class="hobby_text_div">
+                            <div class="hobby_img_info_mob">
+                                <h1>体育/<a>足球&游泳</a></h1>
+                            </div>
+                            <p class="about_p">
+                                对于足球的喜爱来自于小时候的一篇关于球王梅西的文章，从此对足球情有独钟，但是由于身体不断朝着X轴方向发展，
+								在足球运动的路上越来越像是一个望球兴叹的路人甲。
+                            </p>
+                            <p>
+                                喜欢潜泳，无奈每次去泳池都会被人踩，所以只能选择狗刨式~~~
+                                </a>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="hobby_02" style="height:490px">
+                        <div class="hobby_img_div">
+                            <div class="spinner spinner_02"></div>
+                            <div class="hobby_img">
+                                <img src="images/upload/hb2.jpg">
+                            </div>
+                            <div class="hobby_img_info">
+                                <h1>文娱</h1>
+                                <h2>唱歌&弹吉他&lol</h2>
+                            </div>
+                        </div>
+                        <div class="hobby_text_div">
+                            <div class="hobby_img_info_mob">
+                                <h1>文娱/<a>唱歌&弹吉他&lol</a></h1>
+                            </div>
+                            <p class="about_p">
+                                从小喜欢唱歌，每次有比赛都会去参加，也得过大大小小各种奖。喜欢在台上谈着吉他唱着民谣。
+                            </p>
+                            <p>
+                                闲暇之余也会拿起鼠标键盘，约上三五朋友一区开黑Carry。
+                            </p>
+                        </div>
+                    </li>
+                    <li class="hobby_03" style="height:490px">
+                        <div class="hobby_img_div">
+                            <div class="spinner spinner_03"></div>
+                            <div class="hobby_img">
+                                <img src="images/upload/hb3.jpg">
+                            </div>
+                            <div class="hobby_img_info">
+                                <h1>计算机</h1>
+                                <h2>编程&探索未知</h2>
+                            </div>
+                        </div>
+                        <div class="hobby_text_div">
+                            <div class="hobby_img_info_mob">
+                                <h1>计算机/<a>编程&探索</a></h1>
+                            </div>
+                            <p class="about_p">
+                                最喜欢的事就是将自己想要做的全部事情都交给计算机来做。喜欢听着歌编程，因为Big高。
+                            </p>
+                            <p>
+                                喜欢探索新技术，喜欢研究新事物，新的系统，新的软件，新的框架。。。
+                            </p>
+                        </div>
+                    </li>
+                    <div class="clear"></div>
+                </ul>
+            </div>
+             <div class="arrow_div">
+                <img class="arrow_img" src="images/icon/arrowhead.png">
+            </div>
+        </div>
+        
+        <foot id="foot" class="foot">
+            <h1 class="foot_title">Contact With Me</h1>
+            <div class="foot_info_main">
+                <ul>
+                    <!--<li class="github_items">
+                        <a href="myInfo.html" target="_blank">GitHub（待开通）</a>
+                    </li>-->
+                    <li class="google_items">
+                        <a href="myInfo.html" target="_blank">Google+（lwd1304）</a>
+                    
+                    </li>
+                    <li class="twitter_items">
+                        <a href="https://twitter.com/wonder556" target="_blank">Twitter（wonder556）</a>
+                    
+                    </li>
+                    <li class="facebook_items">
+                        <a href="myInfo.html" target="_blank">FaceBook（待开通）</a>
+                    
+                    </li>
+                    <li class="weibo_items">
+                        <a href="https://weibo.com/u/6352574665/home" target="_blank">微博（城管队长爱卖瓜）</a>
+                    
+                    </li>
+                    <li class="zhihu_items">
+                        <a href="myInfo.html" target="_blank">知乎（待开通）</a>
+                    
+                     </li>
+                     <!--<li class="blog_items">
+                        <a href="myInfo.html" target="_blank">博客（wonder556 ）</a>
+                    
+                     </li>-->
+                     <li class="email_items">
+                        <a href="https://outlook.live.com/" target="_blank">dgxz@hotmail.com</a>
+                    </li>
+                    <div class="clear"></div>
+                </ul>
+                <div class="qrcode_div">
+                    <span class="weixin">
+                        <a class="weixin_icon"></a>
+                        <img class="weixin_img" src="images/upload/weixin_qr.png">
+                    </span>
+                    <span class="dingding">
+                        <a class="dingding_icon"></a>
+                        <img class="dingding_img" src="images/upload/dingding_qr.png">
+                    </span>
+                    <span class="qq">
+                        <a class="qq_icon"></a>
+                        <img class="qq_img" src="images/upload/qq_qr.jpg">
+                    </span>
+                </div>
+            </div>
+            <div class="foot_power">
+                <h3>©2018 Pwoerd 
+                    <a href="myInfo.html" title="Night" target="_blank"> Wonder's</a>
+                    <a href="myInfo.html" title="IceEnd">RESUME</a>
+                    <a href="myInfo.html" title="联系方式">联系：166-0626-0516</a>
+                </h3>
+            </div>
+        </foot>
+    </div>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
+
+ 
